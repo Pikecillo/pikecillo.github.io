@@ -1,168 +1,179 @@
-/* --------------------------------------------------
-   CSS Document For Leaves v1.0 - Anthonyy @ OSWD.org
-   -------------------------------------------------- */
-
-/* CONTAINER */
-
-#container {
-    width: 750px;
-    margin: 0 auto;
-    font-family: Lucida Grande, Tahoma, Arial, Helvetica, sans-serif; /* Lucida Grande for the Macs, Tahoma for the PCs */
-    font-size: 11px;
-    line-height: 1.6em;
-    color: #666;
-    background-color: #FFF;
+body {
+	font-family: georgia, verdana, sans-serif;
+	font-size:12px;
+	line-height:1.6em;
+	padding-top:15px;
+	background: #f4f4f4 url(images/bg.gif) top center repeat-y;
 }
 
-/* GENERAL MOJO AND MULA */
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 32px;
-    color: #CC6633;
-    margin-bottom: 30px;
-    background-color: #FFF;
-}
-
-h2 {
-    color: #666666;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFF;
+hr {
+	color:#dddddd;
+	margin:25px;
 }
 
 a {
-    color:#CC6714;
-    text-decoration: none;
+	color:#313177;
+	text-decoration: none;
 }
 
-a:hover {
-    color:#CC6714;
-    background-color: #F5F5F5;
-}
-
-
-form {
-    float:right;
-    margin-top: -45px;
-    font-size: 9px;
-}
-
-input {
-    background-color: #FFF;
-    color: #999999;
-    border: 1px solid #CCC;
-    font-size: 11px;
-    padding: 3px;
-}
-
-.button {
-    padding: 2px;
-}
-
-/* HEADER ELEMENTS */
+/*************************Header****************************/
 
 #header {
-    border-bottom: 4px solid #948979;
-    padding-top: 10px;
-    clear: both;
-    margin-bottom: 10px;
+	clear:both;
+	width:750px;
+	height:245px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:4px solid #CCCCCC;
+	font-size:15px;
+	/*padding-top:5px;
+	padding-bottom:10px;
+	background:url(images/buddhas_header.jpeg);
+	background-repeat:no-repeat;*/
+}
+
+#left-box {
+	width:375px;
+	float:left;
+}
+
+#right-box {
+	width:375px;
+	float:right;
+}
+
+#large {
+	font-size:30px;
+}
+
+#header a {
+	text-decoration:none;
+	color:#000000;
+}
+
+#quote-text {
+	font-style:oblique;
+}
+
+#quote-text {
+	font-weight:bold;
+}
+
+/*************Quote in header************/
+#slogan {
+	float:right;
+	margin-top: -16px;
+	font-size: 9px;
+}
+/****************************************/
+/***********************************************************/
+
+
+
+/***********Container for left bar, center, and right bar************/
+#container {
+	width:750px;
+	margin:auto;
 }
 
 
-/* the slogan */
-#header p { 
-    margin-top: -20px;
-    margin-left: 30px;
-    color: #999999;
+/**********************Left bar***********************/
+#left {
+	float:left;
+	width:138px;
+	padding-right:10px;
 }
 
-/* NAVIGATION ELEMENTS */
-
-#navigation ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style-type: none;			
-    float: left;
-    width: 140px;
+#left h3 {
+	font-size:14px;
+	margin-bottom:-7px;
+	padding-left:3px;
 }
 
-#navigation a {
-    display: block;
-    padding: 5px;
-    width: 140px;
-    border-bottom: 1px solid #CCC;
+#left ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type:none;
 }
 
-#navigation a:link, #navlist a:visited {
-    color:#CC6714;
-    text-decoration: none;
-    float: left;
+#left li {
+	border-bottom:1px solid #dddddd;
 }
 
-#navigation a:hover {
-    background: #000000 url(res/arrow.gif) 96% 50% no-repeat;
-    background-color: #F5F5F5;
-    color:#CC6714;
+#left li a {
+	border-bottom:1px solid #dddddd;
+	display:block;
+	padding:3px;
 }
 
-/* THE SMALL BOX BELOW NAV */
+#left li a:hover {
+	color:#7277B1;
+	background-color: #F5F5F5;
+	display:block;
+}
+/*****************************************************/
 
-#navigation p {
-    margin-top: 40px;
-    padding: 5px;
-    border-bottom: 1px dotted #CCC;
-    border-top: 1px dotted #CCC;
+
+
+/***********************Center************************/
+#center {
+	float:left;
+	width:450px;
+	padding-top:5px;
+	margin-top:10px;
+	color:#000000;
 }
 
-/* CONTENT ELEMENTS */
+.feature {
+	border-bottom:2px dotted #dddddd;
+	margin-bottom:20px;
+	display:block;
+}
+/******************************************************/
 
-#content {
-    width: 362px;
-    margin-left: 180px;
-    margin-right: 200px;
+
+
+/**********************Right bar***********************/
+#right {
+	float:left;
+	width:138px;
+	padding-left:10px;
+	padding-top:15px;
 }
 
-#content p {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #DDDDDD; /* A faint grey line below the text */
+#right img {
+	padding:10px;
 }
 
-/* SIDEBAR ELEMENTS */
-
-#sidebar {
-    float: right;
-    width: 175px;
+/************Pic of the day************/
+#potm {
+	border-bottom:2px dotted #dddddd;
+	padding-bottom:10px;
 }
+/**************************************/
 
-#sidebar p {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #DDDDDD;
+/************Advertisement*************/
+.ad {
+	color:#999999;
+	margin-top:15px;
+	background-color:#F5F5F5;
+	border:1px solid #CCCCCC;
+	height:350px;
+	width:120px;
 }
+/**************************************/
+/******************************************************/
+/********************************************************************/
 
-/* FOOTER ELEMENTS */
 
+/***********************Footer*************************/
 #footer {
-    margin-top: 20px;
-    clear: both;
-    background-color:#575352;
-    padding: 0px 5px 0px 5px;
+	clear:both;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:10px;
+	color:#666666;
 }
-
-#footer p {
-    color:#89817f;
-    padding: 5px;
-}
-
-#footer p a {
-    color: #89817f;
-    border-bottom: 1px dotted #89817f;
-}
-
-#footer p a:hover {
-    color: #FFFFFF;
-    background-color:#575352;
-}
-
-/* And they lived happily ever after. The End. */
+/******************************************************/
